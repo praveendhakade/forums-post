@@ -3,6 +3,12 @@ import { Suspense } from "react";
 import Posts from "@/components/posts";
 import { getPosts } from "@/lib/posts";
 import { IPost } from "@/types/post";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Latest Posts",
+  description: "Browse ours latest posts",
+};
 
 async function LatestPosts() {
   const latestPosts = await getPosts(2);

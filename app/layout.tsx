@@ -1,5 +1,5 @@
 import Header from "@/components/header";
-import "./globals.css";
+import "./globals.scss";
 
 export const metadata = {
   title: "NextPosts",
